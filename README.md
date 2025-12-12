@@ -33,5 +33,5 @@ steps :
 4.       git status
 5. and follow below command to push code to guthub
 6.       git add .
-7.       git commit -m "coommit message"
+7.       git commit -m "commit message"
 8.       git push -u origin master
