@@ -1,0 +1,30 @@
+what is gitlab runner:
+
+    git lab runner is small program that will run your CI/CD jobs from .gitlab-ci.yml
+
+Why GitLab Runner is needed?
+    GitLab alone cannot execute your code. Runner is required to execute tasks defined in:
+                    .gitlab-ci.yml
+Example job:
+
+build_job:
+  script:
+    - echo "Building project..."
+
+  The runner downloads this job → runs it → sends results back to GitLab.
+
+
+How GitLab CI Works (Very Simple)
+
+    1. Developer pushes code to GitLab
+    2️. Pipeline triggers
+    3️. GitLab sends job to Runner
+    4️. Runner runs the script
+    5️. Runner returns results back to GitLab
+
+Installation and setup for Runner:
+    1. follow that official doc and install the gitlab runner according to OS
+    2. runner service can be stop/start using below commands:
+            service status gitlab-runner
+            service start gitlab-runner
+            service stop gitlab-runner
