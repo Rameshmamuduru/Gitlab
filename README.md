@@ -16,7 +16,7 @@
       **7. Monitoring & Analytics**
       See pipeline results, deployments, and activity.
 
-steos :
+steps :
     1. Create account in Gitlab
     2. And Create an Project (make note untill add ssh key it will not allow to take ssh)
     3. Install git for CLI
@@ -24,3 +24,14 @@ steos :
 
         a. git Config --global user.name
         b. git Config --global user.email  
+
+  **How to push code to gitlab???**
+1. create a folde for you project in local
+2. and intialize the git using below command
+         git init
+3. create a file and try to get the status of git using below command
+4.       git status
+5. and follow below command to push code to guthub
+6.       git add .
+7.       git commit -m "coommit message"
+8.       git push -u origin master
